@@ -1,0 +1,9 @@
+@font-face{
+    font-family: cute;
+    src: url(../fonts/Cute-Letters.ttf);
+       }   
+
+@font-face{
+    font-family: cute-italic ;
+    src: url(../fonts/Cute-Letters-Italic.ttf );
+       }    

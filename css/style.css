@@ -1,0 +1,371 @@
+@import url(myfonts.css);
+
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+main {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/*=====================  Header  =============== */
+
+header {
+    width: 100%;
+    height: 620px;
+    background: #fb0;
+    /* background: url(../img/onboarding.png) no-repeat center/cover fixed; */
+    overflow: hidden;
+}
+
+header .top-bar {
+
+    min-height: 50px;
+    /* margin: 3px 4px; */
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background: #000;
+
+    /* border-bottom: 1.5px solid orange; */
+    box-shadow: 3px 3px 3px #fb0;
+
+    overflow: hidden;
+
+}
+
+
+header .top-bar .logo {
+    margin-left: 60px;
+}
+
+header .top-bar .logo img {
+    width: 100px;
+    height: 65px;
+    /*font-size: 20px;
+    color: #fff;*/
+}
+
+header nav {
+    width: 600px;
+}
+
+header .top-bar ul li {
+    /* list-style: none; */
+    display: inline-block;
+    line-height: 2 0px;
+
+    margin-right: 20px;
+    padding: 5px;
+}
+
+header .top-bar ul li:last-child {
+    margin-right: 0;
+}
+
+header .top-bar ul li a {
+    /* text-decoration: none; */
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+/* header .top-bar ul li.active {
+    background: #240e5f;
+    padding: 8px;
+}
+
+header .top-bar ul li.active a {
+    color: #fff;
+} */
+
+header .top-bar ul li:hover {
+    /* background: #240e5f; */
+    background: #fc0;
+}
+
+header .top-bar ul li:hover a {
+    color: #000;
+}
+
+/*=====================  Banner  =============== */
+
+header .banner {
+    width: 100%;
+    height: 620px;
+    background: url(../img/banner.jpg) no-repeat center/cover ;
+    clip-path: circle( 50% at 50% 50%)
+    
+    
+}
+
+/*===================== Academy Box Section  =============== */
+
+#academy-box {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+
+    position: relative;
+    top: -30px;
+    z-index: 99999; 
+
+}
+
+#academy-box .acd-box {
+    width: 75%;
+    margin: auto;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    
+
+}
+
+#academy-box .acd-box figure img {
+    width: 200px;
+    height: 150px;
+    border: 3px solid #fb0;
+
+    /* clip-path: circle(0% at 0% 0%); */
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+/* #academy-box .acd-box figure:hover img{
+   clip-path: circle(20% at 0% 0%);
+   
+} */
+
+
+/*=====================  About Us Section  =============== */
+
+#About {
+    width: 100%;
+    max-height: 400px;
+    min-height: 300px;
+    padding: 50px 0;
+    overflow: hidden;
+
+}
+
+#About h1,
+#latest h1,
+#Schedule h1 {
+    color: #240e5f;
+    font-family: sans-serif;
+    font-size: 35px;
+    text-align: center;
+
+}
+
+hr {
+    margin: 8px 500px;
+}
+
+
+#About .inner-about {
+    width:75%;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap;
+
+}
+
+
+#About .inner-about .text-box {
+    width: 500px;
+}
+
+
+#About .inner-about .text-box h2 {
+    color: #240e5f;
+    font-family: "arial black";
+    margin-bottom: 10px;
+
+}
+
+#About .inner-about .text-box p {
+    padding-left: 20px;
+    color: #002;
+    font-size: 15px;
+
+}
+/* #About .inner-about figure .clip {
+    clip-path: circle(0% at 50% 50%);
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+} */
+/* #About .inner-about figure img:hover {
+    clip-path: circle(30% at 50% 50%);
+    transition: 1s;
+    
+} */
+
+#About .inner-about figure img {
+    width: 500px;
+    max-height: 180px;
+    min-height: 100px;
+
+    border-radius: 12px 12px 2px 2px;
+    -webkit-border-radius: 12px 12px 2px 2px;
+    -moz-border-radius: 12px 12px 2px 2px;
+    -ms-border-radius: 12px 12px 2px 2px;
+    -o-border-radius: 12px 12px 2px 2px;
+}
+
+/*===================== Schedule Section  =============== */
+
+
+table{
+width: 75%;
+margin: auto;
+text-align: center;
+border-collapse: collapse;
+
+}
+
+ td {
+
+font-family: 'arial black';
+font-size: 14px;
+font-style: oblique;
+
+}
+
+tr:nth-of-type(even){
+
+background: lightgray;
+
+}
+
+
+/*===================== Latest News Section  =============== */
+
+/* --- section 2 [ boxs Section ] --- */
+
+#latest {
+    width: 100%;
+    height: 340px;
+    /* max-height: 450px;
+    min-height: 900px; */
+    margin: 50px 0;
+    /* background: lightgray; */
+    overflow: hidden;
+
+
+}
+
+#latest .inner-boxs {
+    width: 75%;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap;
+
+}
+
+#latest .inner-boxs .box {
+    width: 300px;
+    height: 260px;
+    margin-top: 20px;
+    background: lightyellow;
+    border: 1px solid #000;
+    overflow: hidden;
+}
+
+#latest .inner-boxs .box figure img {
+    width: 300px;
+    height: 200px;
+    padding: 5px 8px;
+
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+#latest .inner-boxs .box figcaption {
+    padding: 0 3px;
+
+}
+
+#latest .inner-boxs .box figcaption p {
+
+    color: #002;
+    font-size: 13px;
+
+}
+
+/*=====================  Media Section  =============== */
+
+#Media {
+    width: 100%;
+    height: 310px;
+    margin: auto;
+    overflow: hidden;
+
+
+}
+
+#Media .inner-media {
+    width: 75%;
+    margin: auto;
+    max-height: 450px;
+    min-height: 300px;
+    background: #fb0;
+    border: 5px solid #fb0;
+
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+
+}
+
+#Media figure img {
+    width: 430px;
+    max-height: 450px;
+    min-height: 300px;
+}
+
+
+/*=====================  My Map Section =============== */
+
+.mymap {
+
+    width: 100%;
+    height: 400px;
+    margin: auto;
+}
+
+/*=====================  Footer Section  =============== */
+
+footer {
+    width: 100%;
+    height: 40px;
+    margin: auto;
+    background: gray;
+}
+
+footer marquee {
+    padding-top: 10px;
+}
